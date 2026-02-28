@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <title>Economia • BR RP Futebol</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header>Sistema Monetário • BR RP Futebol</header>
+
+<div class="panel">
+    <h2>Economia</h2>
+
+    <label for="playerSelect">Selecione o jogador:</label>
+    <select id="playerSelect"></select>
+
+    <label>Valor:</label>
+    <input type="number" id="valueInput" placeholder="Ex: 500">
+
+    <button class="btn-green" onclick="addMoney()">Adicionar Dinheiro</button>
+    <button class="btn-danger" onclick="removeMoney()">Remover Dinheiro</button>
+
+    <h3>Saldo Atual:</h3>
+    <p id="saldo">Carregando...</p>
+
+    <h3>Histórico de Transações:</h3>
+    <table>
+        <thead>
+            <tr>
+                <th>Data</th>
+                <th>Tipo</th>
+                <th>Valor</th>
+            </tr>
+        </thead>
+        <tbody id="historyTable"></tbody>
+    </table>
+</div>
+
+<script src="firebase.js"></script>
+<script src="economia.js"></script>
+
+</body>
+</html>
